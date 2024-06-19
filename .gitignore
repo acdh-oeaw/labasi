@@ -16,4 +16,5 @@ __pycache__/
 /cfdb_django/db.sqlite3
 staticfiles
 /Untitled.ipynb
-
+local.py
+venv/
