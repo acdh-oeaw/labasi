@@ -44,7 +44,6 @@ class TabletFilterFormHelper(FormHelper):
                 'content',
                 'distinctive_protagonists',
                 'bibliography',
-                'pk',
                 css_id="advanced_search_fields"
             ),
         )

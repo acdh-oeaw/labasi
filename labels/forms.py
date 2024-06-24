@@ -9,7 +9,7 @@ from .models import Label
 
 
 class LabelForm(forms.ModelForm):
-	isoCode = forms.CharField(required=True,
+	isocode = forms.CharField(required=True,
 		label = "ISO 639-3")
 	label_type = forms.CharField(required=False,
 		label = "Type of the Label") 
@@ -17,7 +17,7 @@ class LabelForm(forms.ModelForm):
 
 	class Meta:
 		model = Label
-		fields = [ 'label','label_type', 'isoCode']
+		fields = [ 'label','label_type', 'isocode']
 
 	def __init__(self, *args, **kwargs):
 		super(LabelForm, self).__init__(*args, **kwargs)
