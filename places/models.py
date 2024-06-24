@@ -1,4 +1,3 @@
-from reversion import revisions as reversion
 from django.db import models
 from labels.models import Label
 
@@ -22,11 +21,10 @@ class Place(models.Model):
 
     def __str__(self):
         if self.alternative_name.exists():
-            return self.name +" (" + " ".join([str(x.label) for x in self.alternative_name.all()]) +")"
+            return self.name + " (" + " ".join([str(x.label) for x in self.alternative_name.all()]) + ")"
         else:
             return self.name
 
     class Meta:
         ordering = ('name',)
 
-reversion.register(Place)

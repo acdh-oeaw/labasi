@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     "django_filters",
     "django_tables2",
     # 'django_spaghetti',
-    "reversion",
     "crispy_forms",
     "crispy_bootstrap3",
     "rest_framework",
@@ -80,7 +79,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "reversion.middleware.RevisionMiddleware",
 ]
 
 ROOT_URLCONF = "labasi.urls"
