@@ -1,3 +1,5 @@
+[![flake8 Lint](https://github.com/acdh-oeaw/labasi/actions/workflows/lint.yml/badge.svg)](https://github.com/acdh-oeaw/labasi/actions/workflows/lint.yml)
+
 # labasi
 
 a python/django based version of cfdb
