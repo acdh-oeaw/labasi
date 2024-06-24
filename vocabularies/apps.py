@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class VocabsConfig(AppConfig):
-    name = 'vocabularies'
+    name = "vocabularies"

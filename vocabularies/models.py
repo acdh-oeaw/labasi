@@ -3,12 +3,11 @@ from django.utils.text import slugify
 
 
 class VocabsBase(models.Model):
-    name = models.CharField(
-        max_length=250, blank=True)
+    name = models.CharField(max_length=250, blank=True)
 
     class Meta:
         abstract = True
-        ordering = ('name',)
+        ordering = ("name",)
 
     def __str__(self):
         return self.name

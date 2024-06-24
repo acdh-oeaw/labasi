@@ -8,4 +8,4 @@ class PlaceSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Place
-        fields = '__all__'
+        fields = "__all__"
