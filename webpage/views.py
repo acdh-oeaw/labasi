@@ -70,7 +70,7 @@ def project_info(request):
         del info_dict["matomo_id"]
         del info_dict["matomo_url"]
     info_dict["base_tech"] = "django"
-    info_dict["framework"] = "djangobaseproject"
+    info_dict["framework"] = "labasi"
     return JsonResponse(info_dict)
 
 
