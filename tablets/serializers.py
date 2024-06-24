@@ -7,7 +7,7 @@ from .models import *
 class SignSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Sign
-        fields = '__all__'
+        fields = "__all__"
 
 
 class TabletSerializer(serializers.HyperlinkedModelSerializer):
@@ -19,7 +19,7 @@ class TabletSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Tablet
-        fields = '__all__'
+        fields = "__all__"
 
 
 class TabletImageSerializer(serializers.HyperlinkedModelSerializer):
@@ -27,7 +27,7 @@ class TabletImageSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = TabletImage
-        fields = '__all__'
+        fields = "__all__"
 
 
 class GlyphSerializer(serializers.HyperlinkedModelSerializer):
@@ -35,4 +35,4 @@ class GlyphSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Glyph
-        fields = '__all__'
+        fields = "__all__"
