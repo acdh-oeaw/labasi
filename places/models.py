@@ -22,9 +22,9 @@ class Place(models.Model):
         if self.alternative_name.exists():
             return (
                 self.name
-                + " ("
-                + " ".join([str(x.label) for x in self.alternative_name.all()])
-                + ")"
+                + " ("  # noqa:
+                + " ".join([str(x.label) for x in self.alternative_name.all()]) # noqa:
+                + ")" # noqa:
             )
         else:
             return self.name

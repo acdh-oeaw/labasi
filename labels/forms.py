@@ -3,7 +3,6 @@ from django import forms
 # from autocomplete_light import shortcuts as al
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
-from crispy_forms.layout import Layout, Fieldset, ButtonHolder, Submit, Div
 
 # from .autocomplete_light_registry import LabelAutocomplete, LabelTypeAutocomplete
 from .models import Label
