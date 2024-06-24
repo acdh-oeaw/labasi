@@ -1,4 +1,4 @@
-# cfdb_django
+# labasi
 
 a python/django based version of cfdb
 

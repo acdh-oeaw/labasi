@@ -8,12 +8,12 @@ __pycache__/
 
 #migrations
 /db.sqlite3
-/cfdb_django/settings/pandorfer_local.py
-/cfdb_django/settings/local.py
-/cfdb_django/settings/server.py
-/cfdb_django/settings/ksenia_server.py
+/labasi/settings/pandorfer_local.py
+/labasi/settings/local.py
+/labasi/settings/server.py
+/labasi/settings/ksenia_server.py
 /playAndTry.ipynb
-/cfdb_django/db.sqlite3
+/labasi/db.sqlite3
 staticfiles
 /Untitled.ipynb
 local.py
