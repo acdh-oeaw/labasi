@@ -9,5 +9,5 @@ django-tables2>=2.7.0,<3
 djangorestframework>=3.15.1,<4
 django-reversion==5.0.12  # should be removed
 psycopg2-binary>=2.9.9,<3
-mysqlclient-2.2.4  # should be removed after switching to postgresql
+mysqlclient==2.2.4  # should be removed after switching to postgresql
 requests>=2.32.3,<3
