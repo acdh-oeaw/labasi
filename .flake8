@@ -13,8 +13,8 @@ exclude =
     env
     infos
     appcreator
-    djangobaseproject/settings
+    labasi/settings
     webpage
-    djangobaseproject/settings/pg_local.py
+    labasi/settings/pg_local.py
     stanza
     venv
