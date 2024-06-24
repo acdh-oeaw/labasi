@@ -1,6 +1,11 @@
 from rest_framework import viewsets
-from .models import *
-from .serializers import *
+from .models import Sign, Tablet, TabletImage, Glyph
+from .serializers import (
+    SignSerializer,
+    TabletSerializer,
+    TabletImageSerializer,
+    GlyphSerializer,
+)
 
 
 class SignViewSet(viewsets.ModelViewSet):
