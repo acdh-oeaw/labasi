@@ -40,11 +40,9 @@ urlpatterns = [
     ),
     re_path(r"places/", include("places.urls", namespace="places")),
     re_path(r"labels/", include("labels.urls", namespace="labels")),
-    # re_path(r'^autocomplete/', include('autocomplete_light.urls')),
     re_path(r"browsing/", include("browsing.urls", namespace="browsing")),
     re_path(r"tablets/", include("tablets.urls", namespace="tablets")),
     re_path(r"charts/", include("charts.urls", namespace="charts")),
-    re_path(r"^datamodel/", include("django_spaghetti.urls", namespace="datamodel")),
 ]
 
 if settings.DEBUG is True:
