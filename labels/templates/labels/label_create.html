@@ -22,12 +22,12 @@
 <script>
     // Script to parse the autocomplete input and to subsitute the entered string (fetched via autocomplete) through this part of the fetched string, which should be stored in the db. 
     $( "#submit-id-submit" ).click(function() {
-        var dataToChange = $( "#id_isoCode").val().split("|");
+        var dataToChange = $( "#id_isocode").val().split("|");
         console.log(dataToChange.length);
         console.log(dataToChange);
         if(dataToChange.length === 2){
             console.log("dataToChange");
-            $( "#id_isoCode").val(dataToChange[1]);
+            $( "#id_isocode").val(dataToChange[1]);
         }             
 });
 </script>

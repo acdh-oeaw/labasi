@@ -18,3 +18,4 @@ staticfiles
 /Untitled.ipynb
 local.py
 venv/
+secret.env
