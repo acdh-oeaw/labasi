@@ -24,7 +24,7 @@ def tablet_to_tei(request, pk):
     context = {"object": instance}
     try:
         context["glyph_list"] = Glyph.objects.filter(tablet=pk)
-    except:
+    except:  # noqa:
         pass
     return render(
         request,

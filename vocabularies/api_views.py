@@ -1,6 +1,13 @@
 from rest_framework import viewsets
-from .models import *
-from .serializers import *
+from .models import Region, Archive, Dossier, Scribe, Period, TextType
+from .serializers import (
+    RegionSerializer,
+    ArchiveSerializer,
+    DossierSerializer,
+    ScribeSerializer,
+    PeriodSerializer,
+    TextTypeSerializer
+)
 
 
 class RegionViewSet(viewsets.ModelViewSet):

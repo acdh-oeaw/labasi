@@ -8,10 +8,18 @@ from django.conf.urls.static import static
 from tablets.views import protected_serve
 
 from rest_framework import routers
-from vocabularies.api_views import *
-from tablets.api_views import *
-from places.api_views import *
-from labels.api_views import *
+from vocabularies.api_views import (
+    RegionViewSet,
+    ArchiveViewSet,
+    DossierViewSet,
+    ScribeViewSet,
+    PeriodViewSet,
+    TextTypeViewSet,
+)
+
+from tablets.api_views import GlyphViewSet, TabletViewSet, SignViewSet
+from places.api_views import PlaceViewSet
+from labels.api_views import LabelViewSet
 
 
 router = routers.DefaultRouter()

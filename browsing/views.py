@@ -1,8 +1,13 @@
 from django_tables2 import SingleTableView, RequestConfig
 from tablets.models import Tablet, Sign, Glyph, TabletImage
-from .filters import *
+from .filters import (
+    GlyphListFilter,
+    SignListFilter,
+    TabletImageListFilter,
+    TabletListFilter,
+)
 from .forms import GenericFilterFormHelper, TabletFilterFormHelper
-from .tables import *
+from .tables import GlyphTable, SignTable, TabletImageTable, TabletTable
 from django.shortcuts import render
 from vocabularies.models import Region, Period
 

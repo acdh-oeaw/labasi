@@ -1,7 +1,12 @@
 from rest_framework import serializers
-from vocabularies.serializers import *
-from places.serializers import *
-from .models import *
+from vocabularies.serializers import (
+    TextTypeSerializer,
+    ArchiveSerializer,
+    PeriodSerializer,
+    ScribeSerializer,
+)
+from places.serializers import PlaceSerializer
+from .models import Glyph, Tablet, Sign, TabletImage
 
 
 class SignSerializer(serializers.HyperlinkedModelSerializer):
