@@ -1,4 +1,3 @@
-from reversion import revisions as reversion
 from django.db import models
 from django.utils.text import slugify
 
@@ -26,29 +25,23 @@ class VocabsBase(models.Model):
 
 class Region(VocabsBase):
     pass
-reversion.register(Region)
 
 
 class Archive(VocabsBase):
     pass
-reversion.register(Archive)
 
 
 class Dossier(VocabsBase):
     pass
-reversion.register(Dossier)
 
 
 class Scribe(VocabsBase):
     pass
-reversion.register(Scribe)
 
 
 class Period(VocabsBase):
     pass
-reversion.register(Period)
 
 
 class TextType(VocabsBase):
     pass
-reversion.register(TextType)
