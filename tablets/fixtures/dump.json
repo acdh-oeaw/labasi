@@ -1,0 +1,136 @@
+[
+{
+    "model": "vocabularies.texttype",
+    "pk": 29,
+    "fields": {
+        "name": "Prebend contract"
+    }
+},
+{
+    "model": "vocabularies.period",
+    "pk": 1,
+    "fields": {
+        "name": "nB"
+    }
+},
+{
+    "model": "vocabularies.scribe",
+    "pk": 234,
+    "fields": {
+        "name": "Nabû-ēṭer-napšāti/Dābibī//Kidin-Sîn"
+    }
+},
+{
+    "model": "places.place",
+    "pk": 1,
+    "fields": {
+        "name": "Borsippa",
+        "geonames_id": "",
+        "lat": null,
+        "lng": null,
+        "alternative_name": []
+    }
+},
+{
+    "model": "vocabularies.archive",
+    "pk": 31,
+    "fields": {
+        "name": "Ibnāya A"
+    }
+},
+{
+    "model": "vocabularies.region",
+    "pk": 1,
+    "fields": {
+        "name": "Borsippa"
+    }
+},
+{
+    "model": "vocabularies.texttype",
+    "pk": 15,
+    "fields": {
+        "name": "Letter"
+    }
+},
+{
+    "model": "vocabularies.period",
+    "pk": 8,
+    "fields": {
+        "name": "EnB"
+    }
+},
+{
+    "model": "places.place",
+    "pk": 3,
+    "fields": {
+        "name": "Uruk",
+        "geonames_id": "",
+        "lat": null,
+        "lng": null,
+        "alternative_name": []
+    }
+},
+{
+    "model": "vocabularies.region",
+    "pk": 2,
+    "fields": {
+        "name": "Uruk"
+    }
+},
+{
+    "model": "tablets.tablet",
+    "pk": 542,
+    "fields": {
+        "text_reference": "BM 29202",
+        "title": "Achaemenid History XV n. 113",
+        "region": 1,
+        "archive": 31,
+        "dossier": null,
+        "cdli_no": "",
+        "nabucco_no": "",
+        "museum_no": "BM 29202",
+        "place": 1,
+        "place_information": "internal",
+        "scribe": 234,
+        "period": 1,
+        "year": 556,
+        "date_not_after": 556,
+        "date_not_before": 556,
+        "babyloneian_time": "LabM10-II-0a",
+        "date_comment": "",
+        "ductus": "",
+        "text_type": 29,
+        "content": "Lease of a butcher’s prebend",
+        "distinctive_protagonists": "",
+        "bibliography": "Waerzeggers, C., The Ezida Temple of Borsippa. Priesthood, Cult, Archives. Leiden: Nederlands Instituut voor het Nabije Osten, 2010 (= Achaemenid History XV)"
+    }
+},
+{
+    "model": "tablets.tablet",
+    "pk": 425,
+    "fields": {
+        "text_reference": "ABL 270",
+        "title": "ABL 270",
+        "region": 2,
+        "archive": null,
+        "dossier": null,
+        "cdli_no": "P237975",
+        "nabucco_no": "",
+        "museum_no": "K 01089",
+        "place": 3,
+        "place_information": "internal",
+        "scribe": null,
+        "period": 8,
+        "year": 648,
+        "date_not_after": 627,
+        "date_not_before": 668,
+        "babyloneian_time": "Reign of Assurbanipal",
+        "date_comment": "The year 648 was chosen at random as it lies towards the mid-point of the possible time range",
+        "ductus": "",
+        "text_type": 15,
+        "content": "Nabû-ušabši of Uruk to Assurbanipal; only greeting formula extant",
+        "distinctive_protagonists": "Nabû-ušabši",
+        "bibliography": "Harper 1892-1914; Waterman, RCAE 1, 1930, 182-183 (no. 270)"
+    }
+}
+]

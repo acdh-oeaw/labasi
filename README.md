@@ -14,8 +14,6 @@ a python/django based version of cfdb
 5. browse to http://127.0.0.1:8000/
 
 
-
-
 ## Docker
 
 At the ACDH-CH we use a centralized database-server. So instead of spawning a database for each service our services are talking to a database on this centralized db-server. This setup is reflected in the dockerized setting as well, meaning it expects an already existing database (either on your host, e.g. accessible via 'localhost' or some remote one)

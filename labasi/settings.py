@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     "places",
     "labels",
     "charts",
+    "fixture_magic",
 ]
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap3"
 CRISPY_TEMPLATE_PACK = "bootstrap3"
