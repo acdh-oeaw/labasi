@@ -21,3 +21,4 @@ venv/
 secret.env
 nohup.out
 hansi.txt
+env.secret
