@@ -22,3 +22,4 @@ secret.env
 nohup.out
 hansi.txt
 env.secret
+hansi.json
