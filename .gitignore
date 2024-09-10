@@ -19,3 +19,5 @@ staticfiles
 local.py
 venv/
 secret.env
+nohup.out
+hansi.txt
