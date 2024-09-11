@@ -28,12 +28,36 @@ class Command(BaseCommand):
                 g.add((uri, ACDH["hasTitle"], Literal(x.title, lang="und")))
             else:
                 continue
-            g.add((uri, ACDH["hasCategory"], URIRef("https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei")))
-            g.add((uri, ACDH["hasLicense"], URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0")))
+            g.add(
+                (
+                    uri,
+                    ACDH["hasCategory"],
+                    URIRef("https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei"),
+                )
+            )
+            g.add(
+                (
+                    uri,
+                    ACDH["hasLicense"],
+                    URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0"),
+                )
+            )
             if x.cdli_no:
-                g.add((uri, ACDH["hasNonLinkedIdentifier"], Literal(f"CDLI no. {x.cdli_no}", lang="en")))
+                g.add(
+                    (
+                        uri,
+                        ACDH["hasNonLinkedIdentifier"],
+                        Literal(f"CDLI no. {x.cdli_no}", lang="en"),
+                    )
+                )
             if x.nabucco_no:
-                g.add((uri, ACDH["hasNonLinkedIdentifier"], Literal(f"NABUCCO no. {x.nabucco_no}", lang="en")))
+                g.add(
+                    (
+                        uri,
+                        ACDH["hasNonLinkedIdentifier"],
+                        Literal(f"NABUCCO no. {x.nabucco_no}", lang="en"),
+                    )
+                )
             g.add(
                 (
                     uri,
