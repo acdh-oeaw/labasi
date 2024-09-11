@@ -80,9 +80,9 @@ class ImprintView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         redmine_id = settings.REDMINE_ID
-        imprint_url = (
-            imprint_url
-        ) = f"https://imprint.acdh.oeaw.ac.at/{redmine_id}?locale=en"
+        imprint_url = imprint_url = (
+            f"https://imprint.acdh.oeaw.ac.at/{redmine_id}?locale=en"
+        )
 
         r = requests.get(imprint_url)
 

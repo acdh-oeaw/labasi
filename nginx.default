@@ -11,6 +11,14 @@ server {
         autoindex on;
         alias /opt/app/media/;
     }
+    location /zips/ {
+        autoindex on;
+        alias /opt/app/zips/;
+    }
+    location /teis/ {
+        autoindex on;
+        alias /opt/app/teis/;
+    }
 
     location / {
         proxy_pass http://127.0.0.1:8010;

@@ -23,3 +23,6 @@ nohup.out
 hansi.txt
 env.secret
 hansi.json
+*.zip
+*.ipynb
+hansi.*

@@ -6,7 +6,7 @@ from .serializers import (
     DossierSerializer,
     ScribeSerializer,
     PeriodSerializer,
-    TextTypeSerializer
+    TextTypeSerializer,
 )
 
 

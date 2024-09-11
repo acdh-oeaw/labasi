@@ -3,7 +3,6 @@ from labels.models import Label
 
 
 class Place(models.Model):
-
     """Holds information about places."""
 
     name = models.CharField(
@@ -23,8 +22,8 @@ class Place(models.Model):
             return (
                 self.name
                 + " ("  # noqa:
-                + " ".join([str(x.label) for x in self.alternative_name.all()]) # noqa:
-                + ")" # noqa:
+                + " ".join([str(x.label) for x in self.alternative_name.all()])  # noqa:
+                + ")"  # noqa:
             )
         else:
             return self.name
