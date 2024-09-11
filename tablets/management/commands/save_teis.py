@@ -14,13 +14,13 @@ class Command(BaseCommand):
     help = "serializes tablet as TEIs into TEI folder"
 
     def handle(self, *args, **kwargs):
-
+        ARCHE_ROOT = settings.ARCHE_ROOT
         TEI_ROOT = settings.TEI_ROOT
         file_to_remove = glob.glob(f"{TEI_ROOT}/*.xml")
         print(f"removing {len(file_to_remove)} from {TEI_ROOT}")
         [os.remove(x) for x in file_to_remove]
 
-        items = Tablet.objects.all()[:10]
+        items = Tablet.objects.all()
         print(f"starting to serialize {len(items)} Tablets")
         for instance in tqdm(items, total=len(items)):
             file_name = f"tablet_{instance.id:03}.xml"
@@ -35,13 +35,10 @@ class Command(BaseCommand):
                 fp.write(data)
         print(f"done with serializing {len(items)} Tablets, now let's zip them")
 
-        folder_path = os.path.join(TEI_ROOT, "teis.zip")
+        folder_path = os.path.join(ARCHE_ROOT, "teis.zip")
         items = glob.glob(f"{TEI_ROOT}/*.xml")
         with zipfile.ZipFile(f"{folder_path}", "w") as zipMe:
             for x in items:
                 arcname = os.path.split(x)[-1]
                 zipMe.write(x, arcname=arcname, compress_type=zipfile.ZIP_DEFLATED)
-        items = glob.glob(f"{TEI_ROOT}/*.xml")
-        print(f"removing {len(items)} from {TEI_ROOT}")
-        [os.remove(x) for x in items]
         return f"zipped {len(items)} tablets as TEIs into {folder_path}"
