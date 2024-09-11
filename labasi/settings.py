@@ -160,3 +160,4 @@ MEDIA_URL = "/media/"
 ZIP_ROOT = os.path.join(BASE_DIR, "zips/")
 TEI_ROOT = os.path.join(BASE_DIR, "teis/")
 ARCHE_ROOT = os.path.join(BASE_DIR, "to-ingest/")
+SEED_FILE_DIR = os.path.join(BASE_DIR, "arche_seed_files/")

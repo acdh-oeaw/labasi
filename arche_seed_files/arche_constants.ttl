@@ -1,0 +1,46 @@
+@prefix acdh: <https://vocabs.acdh.oeaw.ac.at/schema#> .
+@prefix acdhi: <https://id.acdh.oeaw.ac.at/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://orcid.org/0000-0003-2682-8933> a acdh:Person ;
+    acdh:hasTitle "Jursa, Michael"@de .
+
+<https://d-nb.info/gnd/1043833846> a acdh:Person ;
+    acdh:hasTitle "Andorfer, Peter"@de .
+
+<https://id.acdh.oeaw.ac.at/labasi> a acdh:TopCollection ;
+    acdh:hasDescription """LaBaSi is an on-line cuneiform sign list that will elucidate the diachronic development of sign forms and will allow, through cumulative evidence, the identification of standard forms as well as of scribal idiosyncrasies."""@en ;
+    acdh:hasDescription """LaBaSi ist eine Online-Keilschriftzeichenliste, die die diachrone Entwicklung der Zeichenformen erhellen und durch kumulative Belege die Identifizierung von Standardformen sowie von schreiberischen Eigenheiten ermöglichen wird."""@en ;
+    acdh:hasTitle """LaBaSi — Spätbabylonische Zeichen"""@de ;
+    acdh:hasTitle """LaBaSi — Late Babylonian Signs"""@en ;
+    acdh:hasLifeCycleStatus <https://vocabs.acdh.oeaw.ac.at/archelifecyclestatus/active> ;
+    acdh:hasCompleteness "Diese Sammlung wird sukzessive erweitert."@de ;
+    acdh:hasUrl "https://labasi.oeaw.ac.at" ;
+    acdh:hasSubject "Late Babylonian Signs"@en ;
+    acdh:hasSubject "Late Babylonian Signs"@de .
+
+
+<https://id.acdh.oeaw.ac.at/labasi/tablets> a acdh:Collection ;
+    acdh:hasDescription """Holds TEI serialisations of cuneform tablets"""@en;
+    acdh:hasTitle """TEIs of Tablets"""@de ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/labasi> ;
+    acdh:hasLicensor <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasRightsHolder <https://orcid.org/0000-0003-2682-8933> .
+
+<https://id.acdh.oeaw.ac.at/labasi/signs> a acdh:Collection ;
+    acdh:hasDescription """Holds images of standard signs"""@en;
+    acdh:hasTitle """Standard Signs"""@de ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/labasi> ;
+    acdh:hasLicensor <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasRightsHolder <https://orcid.org/0000-0003-2682-8933> .
+
+<https://id.acdh.oeaw.ac.at/labasi/glyphs> a acdh:Collection ;
+    acdh:hasDescription """Holds zip files of glyph images, grouped by sign"""@en;
+    acdh:hasTitle """Images of Glyphs"""@de ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/labasi> ;
+    acdh:hasLicensor <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasRightsHolder <https://orcid.org/0000-0003-2682-8933> .
