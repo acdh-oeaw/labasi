@@ -1,10 +1,11 @@
 import glob
 import os
 import zipfile
+import pandas as pd
 from django.conf import settings
 from django.core.management.base import BaseCommand
 from django.utils.text import slugify
-import pandas as pd
+from tqdm import tqdm
 
 from tablets.models import Glyph
 
@@ -30,7 +31,7 @@ class Command(BaseCommand):
         df["folder"] = df.apply(
             lambda x: slugify(f"{x.sign__sign_name}-{x.sign__id}"), axis=1
         )
-        for g, ndf in df.groupby("folder"):
+        for g, ndf in tqdm(df.groupby("folder")):
             folder_path = os.path.join(ZIP_ROOT, f"{g}.zip")
             with zipfile.ZipFile(f"{folder_path}", "w") as zipMe:
                 for i, row in ndf.iterrows():
