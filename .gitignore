@@ -26,3 +26,4 @@ hansi.json
 *.zip
 *.ipynb
 hansi.*
+tablet_*.xml
