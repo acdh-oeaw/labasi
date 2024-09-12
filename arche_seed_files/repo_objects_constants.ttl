@@ -1,10 +1,14 @@
 @prefix acdh: <https://vocabs.acdh.oeaw.ac.at/schema#> .
 
 <https://foo/bar> acdh:hasCurator <https://d-nb.info/gnd/1043833846> ;
+    acdh:hasPrincipalInvestigator <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasPrincipalInvestigator <https://orcid.org/0000-0001-9777-8895> ;
+    acdh:hasContributor <https://orcid.org/0000-0001-9777-8895> ;
+    acdh:hasContributor <https://orcid.org/0000-0001-8125-8692> ;
+    acdh:hasContributor <https://orcid.org/0000-0003-4165-6666> ;
     acdh:hasContact <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasContributor <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasDepositor <https://orcid.org/0000-0003-2682-8933> ;
-    acdh:hasPrincipalInvestigator <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasMetadataCreator <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasLicensor <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;

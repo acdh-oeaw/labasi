@@ -6,6 +6,15 @@
 <https://orcid.org/0000-0003-2682-8933> a acdh:Person ;
     acdh:hasTitle "Jursa, Michael"@de .
 
+<https://orcid.org/0000-0001-9777-8895> a acdh:Person ;
+    acdh:hasTitle "Pirngruber, Reinhard"@de .
+
+<https://orcid.org/0000-0001-8125-8692> a acdh:Person;
+    acdh:hasTitle "Adelhofer, Matthias"@de .
+
+<https://orcid.org/0000-0003-4165-6666> a acdh:Person;
+    acdh:hasTitle "Levavi, Yuval"@de .
+
 <https://d-nb.info/gnd/1043833846> a acdh:Person ;
     acdh:hasTitle "Andorfer, Peter"@de .
 
