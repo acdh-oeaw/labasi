@@ -28,7 +28,10 @@ class Command(BaseCommand):
             for x in tqdm(Sign.objects.exclude(sign_name="").exclude(image_1="")):
                 fp = os.path.join(MEDIA_ROOT, f"{x.image_1}")
                 arcname = os.path.split(fp)[-1]
-                zipMe.write(fp, arcname=arcname, compress_type=zipfile.ZIP_DEFLATED)
+                try:
+                    zipMe.write(fp, arcname=arcname, compress_type=zipfile.ZIP_DEFLATED)
+                except:  # noqa
+                    continue
 
         print("zipping glyph images")
         props = ["id", "image", "sign__sign_name", "sign__id"]
