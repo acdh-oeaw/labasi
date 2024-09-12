@@ -67,8 +67,9 @@
                   <span class="caret"/>
                   </a>
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'webpage:template' template='about' %}">About project</a>
+                    <a class="dropdown-item" href="{% url 'webpage:template' template='about' %}">About the project</a>
                     <a class="dropdown-item" href="{% url 'webpage:template' template='docu' %}">Documentation</a>
+                    <a class="dropdown-item" href="https://github.com/acdh-oeaw/labasi">Code Repo</a>
                     <a class="dropdown-item" href="{% url 'webpage:template' template='imprint' %}">Imprint | Impressum</a>
                 </div>
               </li>
@@ -128,21 +129,21 @@
 
 <footer>
 <div class="container">
-        <div class="row text-center">
-          <div class="col-sm-4 text-center">
+        <div class="row">
+          <div class="col-sm-4">
             <a href="http://orientalistik.univie.ac.at/" class="navlink">
-              <img src="{% static 'webpage/img/Uni_Logo_2016_SW.png' %}" alt="UniWien" title="Department of Near Eastern Studies, University of Vienna" style="width: 60%;"/>
+              <img src="{% static 'webpage/img/Uni_Logo_2016_SW.png' %}" alt="UniWien" title="Department of Near Eastern Studies, University of Vienna" width="300px"/>
             </a>
 
         </div>
-        <div class="col-sm-4 text-center">
-          <a href="https://www.oeaw.ac.at/acdh/acdh-home/" class="navlink">
-              <img src="{% static 'webpage/img/acdh_logo_black_03.png' %}" alt="ACDH" title="Austrian Centre for Digital Humanities" style="width: 30%; margin-top: 25px; margin-bottom: 30px;"/>
+        <div class="col-sm-4">
+          <a href="https://www.oeaw.ac.at/acdh/acdh-ch-home" class="navlink">
+              <img src="{% static 'webpage/img/acdh-ch-logo-with-text-grayscale.svg' %}" alt="ACDH" title="Austrian Centre for Digital Humanities and Cultural Heritag" width="300px"/>
           </a>
         </div>
-        <div class="col-sm-4 text-center">
-        <a href="https://www.fwf.ac.at/en/" class="navlink">
-              <img src="{% static 'webpage/img/fwf_logo_02.png' %}" alt="FWF" title="FWF Austrian Science Fund" style="width: 50%; margin-top: 20px; margin-bottom: 55px;"/>
+        <div class="col-sm-4">
+        <a href="https://www.fwf.ac.at/" class="navlink">
+              <img src="{% static 'webpage/img/fwf_logo.png' %}" alt="FWF" title="FWF Austrian Science Fund" width="300px"/>
             </a>
         </div>
         </div>
