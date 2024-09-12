@@ -7,7 +7,7 @@ from django.core.management.base import BaseCommand
 from django.utils.text import slugify
 from tqdm import tqdm
 
-from tablets.models import Glyph
+from tablets.models import Glyph, Sign
 
 
 class Command(BaseCommand):
@@ -22,6 +22,15 @@ class Command(BaseCommand):
         print(f"removing {len(items)} from {ZIP_ROOT}")
         [os.remove(x) for x in items]
 
+        print("zipping sign images")
+        folder_path = folder_path = os.path.join(ARCHE_ROOT, "signs.zip")
+        with zipfile.ZipFile(f"{folder_path}", "w") as zipMe:
+            for x in tqdm(Sign.objects.exclude(sign_name="").exclude(image_1="")):
+                fp = os.path.join(MEDIA_ROOT, f"{x.image_1}")
+                arcname = os.path.split(fp)[-1]
+                zipMe.write(fp, arcname=arcname, compress_type=zipfile.ZIP_DEFLATED)
+
+        print("zipping glyph images")
         props = ["id", "image", "sign__sign_name", "sign__id"]
         df = pd.DataFrame(
             Glyph.objects.values_list(*props),
@@ -47,4 +56,5 @@ class Command(BaseCommand):
                 zipMe.write(x, arcname=arcname, compress_type=zipfile.ZIP_DEFLATED)
         items = glob.glob(f"{ZIP_ROOT}/*.zip")
         [os.remove(x) for x in items]
+
         return folder_path
