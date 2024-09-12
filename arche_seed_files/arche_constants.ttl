@@ -29,13 +29,13 @@
     acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasRightsHolder <https://orcid.org/0000-0003-2682-8933> .
 
-# <https://id.acdh.oeaw.ac.at/labasi/signs> a acdh:Collection ;
-#     acdh:hasDescription """Holds images of standard signs"""@en;
-#     acdh:hasTitle """Standard Signs"""@de ;
-#     acdh:isPartOf <https://id.acdh.oeaw.ac.at/labasi> ;
-#     acdh:hasLicensor <https://orcid.org/0000-0003-2682-8933> ;
-#     acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;
-#     acdh:hasRightsHolder <https://orcid.org/0000-0003-2682-8933> .
+<https://id.acdh.oeaw.ac.at/labasi/signs> a acdh:Collection ;
+    acdh:hasDescription """Holds images of standard signs"""@en;
+    acdh:hasTitle """Standard Signs"""@de ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/labasi> ;
+    acdh:hasLicensor <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasRightsHolder <https://orcid.org/0000-0003-2682-8933> .
 
 # <https://id.acdh.oeaw.ac.at/labasi/glyphs> a acdh:Collection ;
 #     acdh:hasDescription """Holds zip files of glyph images, grouped by sign"""@en;
