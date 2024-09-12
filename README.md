@@ -37,7 +37,7 @@ python manage.py zip_images
 python manage.py save_teis
 python manage.py arche
 ```
-Those script populate https://labasi.acdh.oeaw.ac.at/to-ingest/ with the zipped images and TEIs as well as an arche.ttl
+Those scripts populate https://labasi.acdh.oeaw.ac.at/to-ingest/ with the zipped images and TEIs as well as an arche.ttl
 
 `fetch_data.sh`
 
