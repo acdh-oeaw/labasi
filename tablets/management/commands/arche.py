@@ -69,6 +69,7 @@ class Command(BaseCommand):
 
         print("processing Signs")
         for x in tqdm(Sign.objects.exclude(sign_name="").exclude(image_1="")[:10]):
+            # SIGN COLLECTION #
             col_uri = URIRef(LABASI[f"{slugify(x.sign_name)}-{x.id}"])
             g.add((col_uri, RDF.type, ACDH["Collection"]))
             g.add(
@@ -103,6 +104,8 @@ class Command(BaseCommand):
                     URIRef("https://id.acdh.oeaw.ac.at/labasi/signs"),
                 )
             )
+
+            # SIGN IMAGE #
             uri = URIRef(LABASI[f"{x.image_1}"])
             g.add((uri, RDF.type, ACDH["Resource"]))
             g.add((uri, ACDH["hasTitle"], Literal(x.sign_name, lang="und")))
@@ -128,6 +131,7 @@ class Command(BaseCommand):
                 )
             )
 
+            # GLYPH IMAGE #
             zip_uri = URIRef(LABASI[f"{slugify(x.sign_name)}-{x.id}.zip"])
             g.add((zip_uri, RDF.type, ACDH["Resource"]))
             g.add(
@@ -146,9 +150,19 @@ class Command(BaseCommand):
             )
             g.add(
                 (
-                    uri,
+                    zip_uri,
                     ACDH["hasLicense"],
                     URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0"),
+                )
+            )
+            g.add(
+                (
+                    zip_uri,
+                    ACDH["hasExtent"],
+                    Literal(
+                        f"This Zip files holds {x.glyph_set.all().count()} glyph images",
+                        lang="en",
+                    ),
                 )
             )
             g.add(
