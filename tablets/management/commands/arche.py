@@ -138,7 +138,7 @@ class Command(BaseCommand):
                 (
                     zip_uri,
                     ACDH["hasCategory"],
-                    URIRef("https://vocabs.acdh.oeaw.ac.at/archecategory/image"),
+                    URIRef("https://vocabs.acdh.oeaw.ac.at/archecategory/collection"),
                 )
             )
             g.add(
