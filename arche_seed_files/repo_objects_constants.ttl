@@ -9,7 +9,7 @@
     acdh:hasContact <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasContributor <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasDepositor <https://orcid.org/0000-0003-2682-8933> ;
-    acdh:hasMetadataCreator <https://orcid.org/0000-0003-2682-8933> ;
+    acdh:hasMetadataCreator <https://d-nb.info/gnd/1043833846> ;
     acdh:hasLicensor <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasOwner <https://orcid.org/0000-0003-2682-8933> ;
     acdh:hasRightsHolder <https://orcid.org/0000-0003-2682-8933> .

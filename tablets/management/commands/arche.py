@@ -23,7 +23,6 @@ class Command(BaseCommand):
         g_repo_objects = Graph().parse(
             os.path.join(SEED_FILE_DIR, "repo_objects_constants.ttl")
         )
-
         print("processing Tablets")
         for x in tqdm(Tablet.objects.exclude(title="")):
             uri = URIRef(LABASI[f"tablet_{x.id:03}.xml"])
@@ -182,7 +181,12 @@ class Command(BaseCommand):
             for p, o in g_repo_objects.predicate_objects():
                 g.add((x, p, o))
 
+        print("fetching title image info")
+        title_image_graph = Graph().parse(
+            os.path.join(SEED_FILE_DIR, "title_image.ttl")
+        )
+        final_g = g + title_image_graph
         print(f"serializing graph into {ARCHE_MD_FILE}")
-        g.serialize(ARCHE_MD_FILE)
+        final_g.serialize(ARCHE_MD_FILE)
 
         return ARCHE_MD_FILE
