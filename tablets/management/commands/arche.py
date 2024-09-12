@@ -25,7 +25,7 @@ class Command(BaseCommand):
         )
 
         print("processing Tablets")
-        for x in tqdm(Tablet.objects.exclude(title="")[:10]):
+        for x in tqdm(Tablet.objects.exclude(title="")):
             uri = URIRef(LABASI[f"tablet_{x.id:03}.xml"])
             g.add((uri, RDF.type, ACDH["Resource"]))
             g.add((uri, ACDH["hasTitle"], Literal(x.title, lang="und")))
@@ -68,7 +68,7 @@ class Command(BaseCommand):
             )
 
         print("processing Signs")
-        for x in tqdm(Sign.objects.exclude(sign_name="").exclude(image_1="")[:10]):
+        for x in tqdm(Sign.objects.exclude(sign_name="").exclude(image_1="")):
             # SIGN COLLECTION #
             col_uri = URIRef(LABASI[f"{slugify(x.sign_name)}-{x.id}"])
             g.add((col_uri, RDF.type, ACDH["Collection"]))

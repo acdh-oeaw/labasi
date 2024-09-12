@@ -24,7 +24,7 @@ class Command(BaseCommand):
 
         props = ["id", "image", "sign__sign_name", "sign__id"]
         df = pd.DataFrame(
-            Glyph.objects.values_list(*props)[:20],
+            Glyph.objects.values_list(*props),
             columns=props,
         ).astype("str")
         df["path"] = df.apply(lambda x: os.path.join(MEDIA_ROOT, x.image), axis=1)
