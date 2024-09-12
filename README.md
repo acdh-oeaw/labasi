@@ -31,6 +31,8 @@ To run the image you should provide an `.env` file to pass in needed environment
 
 ## ARCHE
 
+### prepare ARCHE (Meta)Data
+
 To create ARCHE metadata, zip glyph and sign images and serialize tablet data as tei run
 ```shell
 python manage.py zip_images
@@ -39,6 +41,21 @@ python manage.py arche
 ```
 Those scripts populate https://labasi.acdh.oeaw.ac.at/to-ingest/ with the zipped images and TEIs as well as an arche.ttl
 
-`fetch_data.sh`
+### ingest
 
-run this script to download and unzip all data needed for arche ingest
+run
+```shell
+fetch_data.sh
+```
+to download binaries and metadata
+
+
+to ingest metadata run
+```shell
+./arche__ingest_md.sh 
+```
+
+and to ingest binaries run
+```shell
+./arche__ingest_binaries.s
+```

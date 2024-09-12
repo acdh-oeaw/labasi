@@ -9,3 +9,4 @@ secret.env
 .github
 *.zip
 /to_ingest
+/fc_out
