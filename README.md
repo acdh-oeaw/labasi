@@ -28,3 +28,13 @@ At the ACDH-CH we use a centralized database-server. So instead of spawning a da
 To run the image you should provide an `.env` file to pass in needed environment variables; see example below:
 
 * `docker run -it -p 8020:8020 --rm --env-file docker.env --name labasi labasi:latest`
+
+## ARCHE
+
+To create ARCHE metadata, zip glyph and sign images and serialize tablet data as tei run
+```shell
+python manage.py zip_images
+python manage.py save_teis
+python manage.py arche
+```
+Those script populate https://labasi.acdh.oeaw.ac.at/to-ingest/ with the zipped images and TEIs as well as an arche.ttl
