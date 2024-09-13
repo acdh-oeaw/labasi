@@ -105,7 +105,8 @@ class Command(BaseCommand):
             )
 
             # SIGN IMAGE #
-            uri = URIRef(LABASI[f"{x.image_1}"])
+            uri_id = str(x.image_1).split("/")[-1]
+            uri = URIRef(LABASI[uri_id])
             g.add((uri, RDF.type, ACDH["Resource"]))
             g.add((uri, ACDH["hasTitle"], Literal(x.sign_name, lang="und")))
             g.add(
