@@ -25,7 +25,7 @@
     acdh:hasTitle """LaBaSi — Late Babylonian Signs"""@en ;
     acdh:hasLifeCycleStatus <https://vocabs.acdh.oeaw.ac.at/archelifecyclestatus/active> ;
     acdh:hasCompleteness "Diese Sammlung wird sukzessive erweitert."@de ;
-    acdh:hasUrl "https://labasi.oeaw.ac.at" ;
+    acdh:hasUrl "https://labasi.acdh.oeaw.ac.at" ;
     acdh:hasSubject "Late Babylonian Signs"@en ;
     acdh:hasSubject "Late Babylonian Signs"@de .
 

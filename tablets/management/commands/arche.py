@@ -31,6 +31,13 @@ class Command(BaseCommand):
             g.add(
                 (
                     uri,
+                    ACDH["hasUrl"],
+                    Literal(f"https://labasi.acdh.oeaw.ac.at/tablets/detail/{x.id}"),
+                )
+            )
+            g.add(
+                (
+                    uri,
                     ACDH["hasCategory"],
                     URIRef("https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei"),
                 )
@@ -108,7 +115,17 @@ class Command(BaseCommand):
             uri_id = str(x.image_1).split("/")[-1]
             uri = URIRef(LABASI[uri_id])
             g.add((uri, RDF.type, ACDH["Resource"]))
-            g.add((uri, ACDH["hasTitle"], Literal(x.sign_name, lang="und")))
+            has_title = f"Image for Standardsign: {x.sign_name}"
+            g.add((uri, ACDH["hasTitle"], Literal(has_title, lang="und")))
+            g.add(
+                (
+                    uri,
+                    ACDH["hasUrl"],
+                    Literal(
+                        f"https://labasi.acdh.oeaw.ac.at/tablets/sign/detail/{x.id}"
+                    ),
+                )
+            )
             g.add(
                 (
                     uri,
